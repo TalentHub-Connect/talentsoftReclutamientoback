@@ -77,20 +77,25 @@ namespace talentsoftReclutamiento.Controllers
             }
         }
 
-        [HttpDelete("eliminar-convocatoria/{id}")]
-        public async Task<IActionResult> DeleteOffer(int id)
+        [HttpPut("eliminar-convocatoria/{id}")]
+        public async Task<IActionResult> DeleteOffer(int id, [FromBody] Offer offer)
         {
-            var offer = await _appDbContext.offer.FindAsync(id);
-            if (offer == null)
+            var existingOffer = await _appDbContext.offer.FindAsync(id);
+            if (existingOffer == null)
             {
                 return NotFound();
             }
 
-            _appDbContext.offer.Remove(offer);
+            existingOffer.Status = false;//"Cerrada"; Poner este valor cuando cambie la base de datos.
 
-            await _appDbContext.SaveChangesAsync();
-
-            return NoContent();
+            if (ModelState.IsValid)
+            {
+                await _appDbContext.SaveChangesAsync();
+                return Ok(existingOffer);
+            }
+            else
+            {
+                return BadRequest(ModelState);
+            }
         }
-    }
 }
