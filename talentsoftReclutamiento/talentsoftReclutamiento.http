@@ -1,0 +1,6 @@
+@talentsoftReclutamiento_HostAddress = http://localhost:5272
+
+GET {{talentsoftReclutamiento_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
