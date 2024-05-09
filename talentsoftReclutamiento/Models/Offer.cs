@@ -13,12 +13,12 @@ public partial class Offer
 
     public int Experience { get; set; }
 
-    public DateOnly PublishDate { get; set; } = new DateOnly();
+    public DateOnly PublishDate { get; set; }
 
     public string Requeriments { get; set; } = null!;
 
     public bool Status { get; set; }
 
-    public int Candidate_id { get; set; }
+    public int CandidateId { get; set; }
 
 }

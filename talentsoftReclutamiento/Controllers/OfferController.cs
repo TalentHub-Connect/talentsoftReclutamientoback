@@ -16,14 +16,14 @@ namespace talentsoftReclutamiento.Controllers
         {
             _appDbContext = appDbContext;
         }
-
+        
         [HttpGet("obtener-convocatorias")]
         public async Task<IActionResult> getAllOffers()
         {
             var allOffers = await _appDbContext.offer.ToListAsync();
             return Ok(allOffers);
         }
-
+        
         [HttpGet("obtener-convocatoria/{id}")]
         public async Task<IActionResult> GetOffer(int id)
         {
@@ -35,7 +35,8 @@ namespace talentsoftReclutamiento.Controllers
 
             return Ok(offer);
         }
-
+        
+        
         [HttpPost("agregar-convocatoria")]
         public async Task<IActionResult> AddOffer([FromBody] Offer offer)
         {
@@ -98,4 +99,6 @@ namespace talentsoftReclutamiento.Controllers
                 return BadRequest(ModelState);
             }
         }
+        
+    }
 }
