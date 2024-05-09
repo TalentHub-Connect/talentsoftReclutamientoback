@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Cors; // Asegúrate de importar este espacio de nombres
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using talentsoftReclutamiento.Data;
@@ -16,15 +17,19 @@ namespace talentsoftReclutamiento.Controllers
         {
             _appDbContext = appDbContext;
         }
-
+        
         [HttpGet("obtener-aspirantes")]
+        [EnableCors("AllowAnyOrigin")] // Habilitar CORS para cualquier origen
         public async Task<IActionResult> getAllCandidates()
         {
             var allCandidates = await _appDbContext.candidate.ToListAsync();
             return Ok(allCandidates);
         }
 
+
         [HttpGet("obtener-aspirante/{id}")]
+        [EnableCors("AllowAnyOrigin")] // Habilitar CORS para cualquier origen
+
         public async Task<IActionResult> GetCandidate(int id)
         {
             var candidate = await _appDbContext.candidate.FindAsync(id);
@@ -36,8 +41,9 @@ namespace talentsoftReclutamiento.Controllers
             return Ok(candidate);
         }
 
-
         [HttpPost("agregar-aspirante")]
+        [EnableCors("AllowAnyOrigin")] // Habilitar CORS para cualquier origen
+
         public async Task<IActionResult> AddCandidate([FromBody] Candidate candidate)
         {
             if (ModelState.IsValid)
@@ -54,6 +60,8 @@ namespace talentsoftReclutamiento.Controllers
         }
 
         [HttpPut("actualizar-aspirante/{id}")]
+        [EnableCors("AllowAnyOrigin")] // Habilitar CORS para cualquier origen
+
         public async Task<IActionResult> UpdateCandidate(int id, [FromBody] Candidate candidate)
         {
             var existingCandidate = await _appDbContext.candidate.FindAsync(id);
@@ -78,6 +86,8 @@ namespace talentsoftReclutamiento.Controllers
         }
 
         [HttpDelete("eliminar-aspirante/{id}")]
+        [EnableCors("AllowAnyOrigin")] // Habilitar CORS para cualquier origen
+
         public async Task<IActionResult> DeleteCandidate(int id)
         {
             var candidate = await _appDbContext.candidate.FindAsync(id);
@@ -92,7 +102,6 @@ namespace talentsoftReclutamiento.Controllers
 
             return NoContent();
         }
-
 
     }
 }

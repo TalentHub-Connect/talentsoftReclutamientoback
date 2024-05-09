@@ -1,6 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using talentsoftReclutamiento.Models;
-//using talentsoftReclutamiento.Models;
 
 namespace talentsoftReclutamiento.Data
 {
@@ -8,7 +7,7 @@ namespace talentsoftReclutamiento.Data
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
-        public DbSet<Candidate> candidate {  get; set; }
+       public DbSet<Candidate> candidate {  get; set; }
 
         public DbSet<Offer> offer { get; set; }
 

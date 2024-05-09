@@ -17,8 +17,8 @@ public partial class Candidate
 
     public bool Status { get; set; }
 
-    public int Curriculum_id { get; set; }
+    public int CurriculumId { get; set; }
 
-    public int TalentSoftUser_id { get; set; }
+    public int TalentSoftUserId { get; set; }
 
 }
