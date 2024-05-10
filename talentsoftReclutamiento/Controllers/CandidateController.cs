@@ -72,7 +72,10 @@ namespace talentsoftReclutamiento.Controllers
 
             existingCandidate.Name = candidate.Name;
             existingCandidate.Surname = candidate.Surname;
-            existingCandidate.PhoneNumber = candidate.PhoneNumber;
+            existingCandidate.OfferId = candidate.OfferId;
+            existingCandidate.Phonenumber = candidate.Phonenumber;
+            existingCandidate.CvId = candidate.CvId;
+            existingCandidate.Candidatestatusid = candidate.Candidatestatusid;
 
             if (ModelState.IsValid)
             {

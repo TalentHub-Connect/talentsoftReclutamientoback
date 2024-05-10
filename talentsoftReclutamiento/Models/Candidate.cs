@@ -7,18 +7,15 @@ public partial class Candidate
 {
     public int Id { get; set; }
 
-    public string Name { get; set; } = null!;
+    public string? Name { get; set; }
 
-    public string Surname { get; set; } = null!;
+    public int OfferId { get; set; }
 
-    public int PhoneNumber { get; set; }
+    public string? Surname { get; set; }
 
-    public string EmploymentExchange { get; set; } = null!;
+    public int? Phonenumber { get; set; }
 
-    public bool Status { get; set; }
+    public int? CvId { get; set; }
 
-    public int CurriculumId { get; set; }
-
-    public int TalentSoftUserId { get; set; }
-
+    public int Candidatestatusid { get; set; }
 }
