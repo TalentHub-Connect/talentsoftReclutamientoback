@@ -17,6 +17,7 @@ namespace talentsoftReclutamiento.Controllers
             _appDbContext = appDbContext;
         }
         
+        
         [HttpGet("obtener-convocatorias")]
         public async Task<IActionResult> getAllOffers()
         {
@@ -62,10 +63,12 @@ namespace talentsoftReclutamiento.Controllers
                 return NotFound();
             }
 
-            existingOffer.TittleOffer = offer.TittleOffer;
+            existingOffer.Tittleoffer = offer.Tittleoffer;
             existingOffer.Description = offer.Description;
-            existingOffer.Status = offer.Status;
+            existingOffer.Experience = offer.Experience;
+            existingOffer.Publishdate = offer.Publishdate;
             existingOffer.Requeriments = offer.Requeriments;
+            existingOffer.Status = offer.Status;
 
             if (ModelState.IsValid)
             {
@@ -87,7 +90,7 @@ namespace talentsoftReclutamiento.Controllers
                 return NotFound();
             }
 
-            existingOffer.Status = false;//"Cerrada"; Poner este valor cuando cambie la base de datos.
+            existingOffer.Status = "Cerrada";//"Cerrada"; Poner este valor cuando cambie la base de datos.
 
             if (ModelState.IsValid)
             {

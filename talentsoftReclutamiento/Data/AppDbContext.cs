@@ -9,7 +9,11 @@ namespace talentsoftReclutamiento.Data
 
        public DbSet<Candidate> candidate {  get; set; }
 
-        public DbSet<Offer> offer { get; set; }
+       public DbSet<Offer> offer { get; set; }
+
+       public DbSet<Curriculum> curriculum { get; set; }
+
+       public DbSet<Candidatestatus> candidatestatuses { get; set; }
 
     }
 }
