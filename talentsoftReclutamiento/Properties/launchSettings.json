@@ -31,13 +31,6 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
-    },
-    "deploy": {
-      "numReplicas": 1,
-      "sleepApplication": false,
-      "restartPolicyType": "ON_FAILURE",
-      "applicationUrl": "https://talentsoftreclutamientoback-qa.up.railway.app/",
-      "restartPolicyMaxRetries": 10
     }
   }
 }
