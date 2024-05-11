@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("talentsoftReclutamiento")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b3b981f3ec0988098f4ab8dfc67e781eb543683d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a9cd646f8e139974374802de394567f34c696bd3")]
 [assembly: System.Reflection.AssemblyProductAttribute("talentsoftReclutamiento")]
 [assembly: System.Reflection.AssemblyTitleAttribute("talentsoftReclutamiento")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
