@@ -24,7 +24,7 @@
       "dotnetRunMessages": true,
       "launchBrowser": true,
       "launchUrl": "swagger",
-      "applicationUrl": "https://localhost:7275;http://localhost:5272",
+      "applicationUrl": "talentsoftreclutamientoback-qa.up.railway.app",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
