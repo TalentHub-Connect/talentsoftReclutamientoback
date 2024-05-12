@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\juanf\\source\\repos\\talentsoftReclutamiento\\talentsoftReclutamiento\\talentsoftReclutamiento.csproj": {}
+    "C:\\Users\\juanf\\Source\\Repos\\talentsoftReclutamientoback2.0\\talentsoftReclutamiento\\talentsoftReclutamiento.csproj": {}
   },
   "projects": {
-    "C:\\Users\\juanf\\source\\repos\\talentsoftReclutamiento\\talentsoftReclutamiento\\talentsoftReclutamiento.csproj": {
+    "C:\\Users\\juanf\\Source\\Repos\\talentsoftReclutamientoback2.0\\talentsoftReclutamiento\\talentsoftReclutamiento.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\juanf\\source\\repos\\talentsoftReclutamiento\\talentsoftReclutamiento\\talentsoftReclutamiento.csproj",
+        "projectUniqueName": "C:\\Users\\juanf\\Source\\Repos\\talentsoftReclutamientoback2.0\\talentsoftReclutamiento\\talentsoftReclutamiento.csproj",
         "projectName": "talentsoftReclutamiento",
-        "projectPath": "C:\\Users\\juanf\\source\\repos\\talentsoftReclutamiento\\talentsoftReclutamiento\\talentsoftReclutamiento.csproj",
+        "projectPath": "C:\\Users\\juanf\\Source\\Repos\\talentsoftReclutamientoback2.0\\talentsoftReclutamiento\\talentsoftReclutamiento.csproj",
         "packagesPath": "C:\\Users\\juanf\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\juanf\\source\\repos\\talentsoftReclutamiento\\talentsoftReclutamiento\\obj\\",
+        "outputPath": "C:\\Users\\juanf\\Source\\Repos\\talentsoftReclutamientoback2.0\\talentsoftReclutamiento\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -46,13 +46,13 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.0, )"
+              "version": "[6.0.8, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.0, )"
+              "version": "[6.0.8, )"
             },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
@@ -60,7 +60,7 @@
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.0.0, )"
+              "version": "[6.4.0, )"
             }
           },
           "imports": [
