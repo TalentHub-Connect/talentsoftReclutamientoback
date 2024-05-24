@@ -1,0 +1,16 @@
+C:\Users\juanf\source\repos\talentsoftReclutamiento\out\talentsoftReclutamiento.exe
+C:\Users\juanf\source\repos\talentsoftReclutamiento\out\appsettings.Development.json
+C:\Users\juanf\source\repos\talentsoftReclutamiento\out\appsettings.json
+C:\Users\juanf\source\repos\talentsoftReclutamiento\out\talentsoftReclutamiento.dll
+C:\Users\juanf\source\repos\talentsoftReclutamiento\out\talentsoftReclutamiento.runtimeconfig.json
+C:\Users\juanf\source\repos\talentsoftReclutamiento\out\talentsoftReclutamiento.pdb
+C:\Users\juanf\source\repos\talentsoftReclutamiento\out\Microsoft.EntityFrameworkCore.dll
+C:\Users\juanf\source\repos\talentsoftReclutamiento\out\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\juanf\source\repos\talentsoftReclutamiento\out\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\juanf\source\repos\talentsoftReclutamiento\out\Microsoft.OpenApi.dll
+C:\Users\juanf\source\repos\talentsoftReclutamiento\out\MySqlConnector.dll
+C:\Users\juanf\source\repos\talentsoftReclutamiento\out\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\juanf\source\repos\talentsoftReclutamiento\out\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\juanf\source\repos\talentsoftReclutamiento\out\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\juanf\source\repos\talentsoftReclutamiento\out\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\juanf\source\repos\talentsoftReclutamiento\out\talentsoftReclutamiento.deps.json
